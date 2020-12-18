@@ -1,0 +1,9 @@
+{
+  "name": "adamraine.com",
+  "version": "1.0.0",
+  "description": "Personal website for Adam Raine",
+  "main": "index.js",
+  "repository": "https://github.com/adamraine/adamraine.com",
+  "author": "Adam Raine",
+  "license": "MIT"
+}
