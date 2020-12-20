@@ -6,6 +6,9 @@
   "repository": "https://github.com/adamraine/adamraine.com",
   "author": "Adam Raine",
   "license": "MIT",
+  "scripts": {
+    "test": "firebase emulators:start"
+  },
   "dependencies": {
     "firebase": "^8.2.1"
   }
