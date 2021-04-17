@@ -1,6 +1,6 @@
 @media screen and (min-width: 601px) {
   html {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -12,6 +12,8 @@
 body {
   margin: 0;
   font-family: 'comforta', sans-serif;
+  background-image: url('assets/bg_tile.png');
+  background-repeat: repeat;
 }
 
 .title {
@@ -53,7 +55,7 @@ body {
   transition: transform 0.5s, color 0.2s, background-color 0.2s;
 }
 @media (hover: hover) and (pointer: fine) {
-  .menu_item:hover, .menu_item:active {
+  .menu_item:hover {
     transform: translateY(5px);
   }
 }
@@ -68,6 +70,13 @@ body {
   border-radius: 5px;
 }
 
+.content {
+  margin: auto;
+  min-width: 40%;
+  max-width: 540px;
+  padding-top: 20vh;
+}
+
 .copyright {
   width: 100%;
   font-size: 0.5rem;
@@ -76,57 +85,44 @@ body {
   color: white;
 }
 
-.section {
-  display: flex;
-  background-size: cover;
-  align-content: center;
-  height: 100vh;
-}
-
 .section_box {
-  display: grid;
   z-index: 1;
-  width: 60%;
+  max-width: 40rem;
   border-radius: 5px;
   margin: auto;
   height: fit-content;
-  grid-template-areas:
-    'side    title'
-    'content content';
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  padding: 50px;
+  padding: 1rem;
   background-color: rgba(200, 200, 200, 0.8);
   backdrop-filter: blur(20px);
 }
 
 .section_title {
-  display: flex;
-  align-self: center;
-  grid-area: title;
+  width: fit-content;
+  margin: auto;
   font-size: 1.2rem;
   font-weight: bold;
   font-style: italic;
 }
 
 .section_content {
-  grid-area: content;
+  display: inline-grid;
+  grid-template-columns: auto auto;
   font-size: 1rem;
+  padding: 5px;
 }
-
-.section_side {
-  grid-area: side;
-}
-.section_side > img {
-  float: right;
-  margin-left: auto;
-  margin-right: 0;
-  width: 5rem;
-  height: 5rem;
+.section_content > img {
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
+  padding: 5px;
+}
+.section_content > div {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
-#about {
+/*#about {
   background-image: url('assets/20190822_124455.jpg');
 }
 
@@ -140,4 +136,4 @@ body {
 
 #contact {
   background-image: url('assets/belagio.jpg');
-}
+}*/
