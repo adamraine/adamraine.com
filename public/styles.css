@@ -32,7 +32,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #282828;
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }

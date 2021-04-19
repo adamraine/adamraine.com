@@ -1,0 +1,26 @@
+{
+  "name": "Adam Raine",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#282828",
+  "theme_color": "#282828",
+  "icons": [
+    {
+      "src": "images/profile-144.webp",
+      "sizes": "144x144",
+      "type": "image/webp",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/profile-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    },
+    {
+      "src": "images/profile.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
