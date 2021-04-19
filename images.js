@@ -7,10 +7,10 @@ fs.readdirSync(input_dir).forEach(file => {
   const name = file.split('.').slice(0, -1).join('.');
   const path = `${input_dir}/${file}`
   sharp(path)
-    .resize(250, 250)
+    .resize(150, 150)
     .toFile(`${output_dir}/${name}-small.webp`);
   sharp(path)
-    .resize(500, 500)
+    .resize(300, 300)
     .toFile(`${output_dir}/${name}.webp`);
   sharp(path)
     .resize(144, 144)
