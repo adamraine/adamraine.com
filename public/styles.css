@@ -3,9 +3,9 @@
   width: fit-content;
   width: -moz-fit-content;
 }
-.profile > img {
-  width: 150px;
-  height: 150px;
+.profile > picture > img {
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 }
 
@@ -32,6 +32,17 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #282828;
+  font-family: 'Lato', sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
 }
 
 .content {
@@ -65,6 +76,7 @@ body {
   transition-duration: 0.5s;
   margin-bottom: 10px;
   border-radius: 5px;
+  padding: 5px;
 }
 .item:hover {
   cursor: pointer;

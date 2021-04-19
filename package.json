@@ -7,9 +7,11 @@
   "author": "Adam Raine",
   "license": "MIT",
   "scripts": {
-    "test": "firebase emulators:start"
+    "test": "firebase emulators:start",
+    "images": "node images.js"
   },
   "dependencies": {
-    "firebase": "^8.2.1"
+    "firebase": "^8.2.1",
+    "sharp": "^0.28.1"
   }
 }
