@@ -3,7 +3,6 @@ const CACHE = 'cache-v1';
 const CACHE_URLS = [
   'index.html',
   './',
-  'styles.css',
   'main.js'
 ];
 

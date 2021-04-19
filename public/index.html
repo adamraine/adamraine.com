@@ -7,9 +7,129 @@
     <meta name="description" content="Adam Raine - Software Engineer">
     <meta name="theme-color" content="#282828"/>
     <link rel="apple-touch-icon" href="/images/profile-144.webp">
-    <link href="styles.css" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
     <script src="main.js" async></script>
+    <style>
+      body {
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+        min-height: 100vh;
+        background-color: #282828;
+        font-family: sans-serif;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    
+      body::-webkit-scrollbar {
+        display: none;
+      }
+    
+      a {
+        color: unset;
+        text-decoration: unset;
+      }
+    
+      .profile {
+        margin: auto;
+        width: fit-content;
+        width: -moz-fit-content;
+      }
+    
+      .profile>picture>img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+    
+      .title {
+        margin: auto;
+        width: fit-content;
+        width: -moz-fit-content;
+        font-size: 50px;
+        z-index: 2;
+      }
+    
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+      }
+    
+      .header {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: white;
+      }
+    
+      .items {
+        width: 400px;
+        max-width: 90%;
+      }
+    
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 5px;
+      }
+    
+      .item:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    
+      .item.nohover:hover {
+        cursor: default;
+        transform: none;
+      }
+    
+      .item-title {
+        display: flex;
+        font-size: 40px;
+      }
+    
+      .item-logo {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+      }
+    
+      .item-logo>svg {
+        display: flex;
+        width: 30px;
+        height: 30px;
+      }
+    
+      .item-content {
+        margin: 20px;
+      }
+    
+      .footer {
+        display: flex;
+        width: 100%;
+        flex-grow: 1;
+      }
+    
+      .copyright {
+        width: fit-content;
+        width: -moz-fit-content;
+        margin: auto;
+        padding: 5px;
+        color: white;
+        margin-bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <main class="content">
