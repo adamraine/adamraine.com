@@ -1,9 +1,8 @@
-const CACHE = 'cache-v1';
+const CACHE = 'cache-v2';
 
 const CACHE_URLS = [
   'index.html',
   './',
-  'main.js'
 ];
 
 self.addEventListener('install', event => {

@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#282828"/>
     <link rel="apple-touch-icon" href="/images/profile-144.webp">
     <link rel="manifest" href="/manifest.json">
-    <script src="main.js" async></script>
+    <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');</script>
     <style>
       body {
         display: flex;
