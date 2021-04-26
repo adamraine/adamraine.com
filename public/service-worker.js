@@ -1,4 +1,4 @@
-const CACHE = 'cache-v2';
+const CACHE = 'cache-v3';
 
 const CACHE_URLS = [
   'index.html',
