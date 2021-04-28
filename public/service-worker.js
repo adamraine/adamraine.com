@@ -1,8 +1,10 @@
-const CACHE = 'cache-v4';
+const CACHE = 'cache-v5';
 
 const CACHE_URLS = [
   'index.html',
   './',
+  'images/profile-small.webp',
+  'images/profile.webp',
 ];
 
 self.addEventListener('install', event => {
@@ -25,12 +27,12 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) return response;
-        return fetch(event.request);
-      }
-    )
-  );
+  const response = Promise.all([
+    caches.match(event.request),
+    fetch(event.request).catch(() => new Response(null, {status: 404})),
+  ]).then(([cacheResponse, fetchResponse]) => {
+    if (cacheResponse && !fetchResponse.ok) return cacheResponse;
+    return fetchResponse;
+  })
+  event.respondWith(response);
 });
