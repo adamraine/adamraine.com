@@ -1,4 +1,4 @@
-const CACHE = 'cache-v5';
+const CACHE = 'cache-v6';
 
 const CACHE_URLS = [
   'index.html',

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "firebase": "^8.2.1",
-    "sharp": "^0.28.1"
+    "sharp": "^0.28.1",
+    "to-ico": "^1.1.5"
   }
 }

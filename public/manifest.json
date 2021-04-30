@@ -7,18 +7,19 @@
   "theme_color": "#282828",
   "icons": [
     {
-      "src": "images/profile-144.webp",
+      "src": "images/icon-144.webp",
       "sizes": "144x144",
       "type": "image/webp",
       "purpose": "maskable"
     },
     {
-      "src": "images/profile-512.webp",
+      "src": "images/icon-512.webp",
       "sizes": "512x512",
-      "type": "image/webp"
+      "type": "image/webp",
+      "purpose": "maskable"
     },
     {
-      "src": "images/profile.png",
+      "src": "images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
