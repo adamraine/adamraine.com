@@ -1,10 +1,15 @@
-const CACHE = 'cache-v6';
+const CACHE = 'cache-v7';
 
 const CACHE_URLS = [
   'index.html',
   './',
+  'resume.pdf',
   'images/profile-small.webp',
   'images/profile.webp',
+  'images/icon-144.webp',
+  'images/icon-512.webp',
+  'images/icon-512.png',
+  'favicon.ico',
 ];
 
 self.addEventListener('install', event => {
