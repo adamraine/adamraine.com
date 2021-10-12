@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "test": "firebase emulators:start",
-    "images": "node images.js"
+    "images": "node images.js",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "firebase": "^8.2.1",
