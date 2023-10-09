@@ -18,7 +18,7 @@
         "headers": [
           {
             "key": "Content-Security-Policy",
-            "value": "script-src 'strict-dynamic' 'sha256-EvixHaDqmKXqM6vsdHIjNY2reHO62Vo+byZ26gPs8h4=' 'unsafe-inline' https:; object-src 'none'; base-uri 'none'"
+            "value": "script-src 'strict-dynamic' 'unsafe-inline' https:; object-src 'none'; base-uri 'none'"
           }
         ]
       }
