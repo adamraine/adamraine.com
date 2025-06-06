@@ -6,6 +6,7 @@
   "repository": "https://github.com/adamraine/adamraine.com",
   "author": "Adam Raine",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "test": "firebase emulators:start",
     "images": "node images.js",
@@ -13,7 +14,7 @@
   },
   "devDependencies": {
     "firebase": "^8.2.1",
-    "sharp": "^0.28.1",
+    "sharp": "^0.34.2",
     "to-ico": "^1.1.5"
   }
 }

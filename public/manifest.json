@@ -1,25 +1,25 @@
 {
   "name": "Adam Raine",
-  "display": "standalone",
+  "display": "minimal-ui",
   "start_url": "/",
   "scope": "/",
   "background_color": "#282828",
   "theme_color": "#282828",
   "icons": [
     {
-      "src": "images/icon-144.webp",
+      "src": "images/profile-maskable-144x144.webp",
       "sizes": "144x144",
       "type": "image/webp",
       "purpose": "maskable"
     },
     {
-      "src": "images/icon-512.webp",
+      "src": "images/profile-maskable-512x512.webp",
       "sizes": "512x512",
       "type": "image/webp",
       "purpose": "maskable"
     },
     {
-      "src": "images/icon-512.png",
+      "src": "images/profile-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
