@@ -19,6 +19,10 @@
           {
             "key": "Content-Security-Policy",
             "value": "script-src 'strict-dynamic' 'unsafe-inline' https:; object-src 'none'; base-uri 'none'"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
           }
         ]
       }
