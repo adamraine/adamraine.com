@@ -13,7 +13,6 @@
     "deploy": "firebase deploy"
   },
   "devDependencies": {
-    "firebase": "^8.2.1",
     "sharp": "^0.34.2",
     "to-ico": "^1.1.5"
   }
